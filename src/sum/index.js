@@ -11,6 +11,15 @@
 */
 const sum = (a, b) => {
   /* your logic here...*/
+  if(typeof a === "number" && typeof b === "number" ){
+  	return a+b;
+  }else if(isNaN(a) || isNaN(b) ||isInfinite(a)|| isInfinite(b) ){
+  	return error;
+  }else{
+  	return error;
+  }
+
+
 };
 
 export default sum;

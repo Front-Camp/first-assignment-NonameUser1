@@ -12,6 +12,19 @@
  */
 const sumElements = arr => {
   /* your logic here...*/
+  var numbrs =[];
+  for(let i=0; i<= arr.length; i++){
+  	if(typeof arr[i] === "number"){
+  		numbrs.push(arr[i]);
+  	}else if(typeof arr[i] === "string"){
+  		numbrs.push(parseInt(arr[i]));
+  	}
+  }
+  var sum =0;
+  for(let i=0; i<= numbrs.length; i++){
+  	sum+=numbrs[i];
+  }
+  return sum;
 };
 
 export default sumElements;
